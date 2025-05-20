@@ -1,24 +1,20 @@
-import React from 'react';
+import React from "react";
 
 const Hero = () => {
-
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white dark:bg-black">
-      {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-900/80 via-amber-900/70 to-black/80 z-10 dark:from-purple-900/90 dark:via-amber-900/80 dark:to-black/90"></div>
-      
-      {/* Animated background pattern */}
+
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-amber-500/20 via-transparent to-transparent animate-pulse"></div>
-      
-      {/* Background image */}
-      <div 
+
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-105 transition-transform duration-10000 hover:scale-110"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80')"
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80')",
         }}
       ></div>
 
-      {/* Content */}
       <div className="relative z-20 text-center px-4 sm:px-6 lg:px-8">
         <div className="space-y-6">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-200 to-amber-400 mb-4 animate-gradient dark:from-amber-300 dark:via-amber-100 dark:to-amber-300">
@@ -37,11 +33,9 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
-      {/* Decorative elements */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black/50 to-transparent z-10 dark:from-black"></div>
     </div>
   );
 };
 
-export default Hero; 
+export default Hero;

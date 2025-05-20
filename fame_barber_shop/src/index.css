@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -12,12 +12,11 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  /* Default light mode styles */
+
   background-color: #ffffff;
   color: #213547;
 }
 
-/* Dark mode styles */
 body.dark {
   background-color: #1a1a1a;
   color: #ffffff;
@@ -40,7 +39,6 @@ body.dark {
   animation: gradient 8s linear infinite;
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }

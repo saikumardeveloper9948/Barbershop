@@ -1,13 +1,10 @@
-
 import React from "react";
 
 const Footer = () => {
   return (
     <footer className="bg-black text-gray-300 py-12 dark:bg-gray-900 dark:text-gray-400">
       <div className="container mx-auto px-4">
-        {/* First Row - Brand Info and Newsletter */}
         <div className="flex flex-col md:flex-row gap-8 mb-12">
-          {/* Brand Info */}
           <div className="md:w-1/2 space-y-4">
             <div className="text-2xl font-bold text-amber-500">FamaBarber</div>
             <p className="text-gray-400 dark:text-gray-500">
@@ -17,7 +14,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Newsletter */}
           <div className="md:w-1/2 space-y-4">
             <h4 className="text-white font-semibold dark:text-gray-300">
               Newsletter
@@ -35,9 +31,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Second Row - Main Pages and Follow Us side by side */}
         <div className="grid grid-cols-2 gap-8">
-          {/* Main Pages */}
           <div className="space-y-4">
             <h4 className="text-white font-semibold mb-3 dark:text-gray-300">
               Main Pages
@@ -86,7 +80,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Follow Us */}
           <div className="space-y-4">
             <h4 className="text-white font-semibold mb-3 dark:text-gray-300">
               Follow Us
@@ -97,7 +90,9 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-amber-500 text-2xl transition duration-300"
-                onClick={() => alert("Check WhatsApp! Message is ready to send.")}
+                onClick={() =>
+                  alert("Check WhatsApp! Message is ready to send.")
+                }
               >
                 <i className="fab fa-whatsapp mr-2"></i>
               </a>
@@ -123,7 +118,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Copyright */}
         <div className="mt-12 border-t border-gray-700 pt-8 text-center text-gray-200 text-sm dark:border-gray-800 dark:text-gray-100">
           © {new Date().getFullYear()} FamaBarber. All rights reserved.
         </div>

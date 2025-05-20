@@ -9,6 +9,7 @@ import NewsArticles from './components/NewsArticles'
 import Footer from './components/Footer'
 import Testimonials from './components/Testimonials'
 import FAQ from './components/FAQ'
+import Address from './components/Address'
 import './App.css'
 
 function App() {
@@ -33,6 +34,10 @@ function App() {
         <div id="faq" >
           <FAQ/>
         </div>
+        <div id="" >
+          <Address/>
+        </div>
+        
         <Footer/>
       </div>
     </ThemeProvider>

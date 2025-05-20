@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const About = () => {
   return (
@@ -6,16 +6,21 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto bg-gray-800  backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-gray-700/50 dark:bg-gray-100/50 dark:border-gray-300/50">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-            {/* Left side - Category and Rating */}
             <div className="space-y-6 text-center md:text-left">
               <div>
-                <h2 className="text-2xl font-bold text-white dark:text-amber-500 mb-2">Barber Shop</h2>
+                <h2 className="text-2xl font-bold text-white dark:text-amber-500 mb-2">
+                  Barber Shop
+                </h2>
                 <div className="flex items-center justify-center md:justify-start gap-2">
                   <div className="flex text-amber-500">
                     {[...Array(5)].map((_, i) => (
                       <svg
                         key={i}
-                        className={`w-5 h-5 ${i < 4 ? 'text-amber-400' : 'text-gray-400 dark:text-white'}`}
+                        className={`w-5 h-5 ${
+                          i < 4
+                            ? "text-amber-400"
+                            : "text-gray-400 dark:text-white"
+                        }`}
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -24,19 +29,24 @@ const About = () => {
                     ))}
                   </div>
                   <span className="text-amber-500 font-semibold">4.6</span>
-                  <span className="text-gray-400 dark:text-white">(116+ reviews)</span>
+                  <span className="text-gray-400 dark:text-white">
+                    (116+ reviews)
+                  </span>
                 </div>
               </div>
             </div>
 
-            {/* Right side - Status */}
             <div className="flex items-center gap-3 bg-gray-900/50 px-6 py-3 rounded-full border border-gray-700/50 dark:bg-gray-200/50 dark:border-gray-300/50">
               <div className="flex items-center gap-2">
                 <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                <span className="text-green-400 font-medium dark:text-green-600">Open</span>
+                <span className="text-green-400 font-medium dark:text-green-600">
+                  Open
+                </span>
               </div>
               <span className="text-gray-400 dark:text-gray-600">⋅</span>
-              <span className="text-gray-300 dark:text-gray-700">Closes 7 pm</span>
+              <span className="text-gray-300 dark:text-gray-700">
+                Closes 7 pm
+              </span>
             </div>
           </div>
         </div>
@@ -45,4 +55,4 @@ const About = () => {
   );
 };
 
-export default About; 
+export default About;
