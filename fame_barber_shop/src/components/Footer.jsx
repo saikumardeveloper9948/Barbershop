@@ -1,4 +1,5 @@
-import React from 'react';
+
+import React from "react";
 
 const Footer = () => {
   return (
@@ -8,17 +9,19 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row gap-8 mb-12">
           {/* Brand Info */}
           <div className="md:w-1/2 space-y-4">
-            <div className="text-2xl font-bold text-amber-500">
-              FamaBarber
-            </div>
+            <div className="text-2xl font-bold text-amber-500">FamaBarber</div>
             <p className="text-gray-400 dark:text-gray-500">
-              Welcome to FamaBarber, where classic tradition meets contemporary style. Our team of skilled barbers is dedicated to providing top-notch grooming services.
+              Welcome to FamaBarber, where classic tradition meets contemporary
+              style. Our team of skilled barbers is dedicated to providing
+              top-notch grooming services.
             </p>
           </div>
 
           {/* Newsletter */}
           <div className="md:w-1/2 space-y-4">
-            <h4 className="text-white font-semibold dark:text-gray-300">Newsletter</h4>
+            <h4 className="text-white font-semibold dark:text-gray-300">
+              Newsletter
+            </h4>
             <div className="flex gap-2">
               <input
                 type="email"
@@ -36,32 +39,86 @@ const Footer = () => {
         <div className="grid grid-cols-2 gap-8">
           {/* Main Pages */}
           <div className="space-y-4">
-            <h4 className="text-white font-semibold mb-3 dark:text-gray-300">Main Pages</h4>
+            <h4 className="text-white font-semibold mb-3 dark:text-gray-300">
+              Main Pages
+            </h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-amber-500 transition duration-300 dark:text-gray-500 dark:hover:text-amber-500">Homepage</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-amber-500 transition duration-300 dark:text-gray-500 dark:hover:text-amber-500">About Us</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-amber-500 transition duration-300 dark:text-gray-500 dark:hover:text-amber-500">Services</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-amber-500 transition duration-300 dark:text-gray-500 dark:hover:text-amber-500">Blog</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-amber-500 transition duration-300 dark:text-gray-500 dark:hover:text-amber-500">Contact Us</a></li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-amber-500 transition duration-300 dark:text-gray-500 dark:hover:text-amber-500"
+                >
+                  Homepage
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-amber-500 transition duration-300 dark:text-gray-500 dark:hover:text-amber-500"
+                >
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-amber-500 transition duration-300 dark:text-gray-500 dark:hover:text-amber-500"
+                >
+                  Services
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-amber-500 transition duration-300 dark:text-gray-500 dark:hover:text-amber-500"
+                >
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-amber-500 transition duration-300 dark:text-gray-500 dark:hover:text-amber-500"
+                >
+                  Contact Us
+                </a>
+              </li>
             </ul>
           </div>
 
           {/* Follow Us */}
           <div className="space-y-4">
-            <h4 className="text-white font-semibold mb-3 dark:text-gray-300">Follow Us</h4>
+            <h4 className="text-white font-semibold mb-3 dark:text-gray-300">
+              Follow Us
+            </h4>
             <div className="flex flex-col gap-4">
               <a
-                href="https://wa.me/919948638817?text=Send%20me%20the%20location"
+                href="https://api.whatsapp.com/send?phone=919948638817&text=Send%20me%20the%20location&app_absent=1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-amber-500 text-2xl transition duration-300"
+                onClick={() => alert("Check WhatsApp! Message is ready to send.")}
               >
                 <i className="fab fa-whatsapp mr-2"></i>
               </a>
-              <a href="#" className="text-gray-400 hover:text-amber-500 text-2xl transition duration-300"><i className="fab fa-facebook-f mr-2"></i></a>
-              <a href="#" className="text-gray-400 hover:text-amber-500 text-2xl transition duration-300"><i className="fab fa-twitter mr-2"></i></a>
-              <a href="#" className="text-gray-400 hover:text-amber-500 text-2xl transition duration-300"><i className="fab fa-instagram mr-2"></i></a>
-
+              <a
+                href="#"
+                className="text-gray-400 hover:text-amber-500 text-2xl transition duration-300"
+              >
+                <i className="fab fa-facebook-f mr-2"></i>
+              </a>
+              <a
+                href="#"
+                className="text-gray-400 hover:text-amber-500 text-2xl transition duration-300"
+              >
+                <i className="fab fa-twitter mr-2"></i>
+              </a>
+              <a
+                href="#"
+                className="text-gray-400 hover:text-amber-500 text-2xl transition duration-300"
+              >
+                <i className="fab fa-instagram mr-2"></i>
+              </a>
             </div>
           </div>
         </div>
